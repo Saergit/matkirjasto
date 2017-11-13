@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+	
+    <title>MongoDB frontend</title>
+	
+	<style>
+		html {
+			background-color: gray;
+		}
+	</style>
+</head>
+<body>
+    <h1>POST</h1>
+    <form action="/material/add" enctype="multipart/form-data" method="POST">
+        <input type="text" name="name" placeholder="Name">
+        <input type="text" name="type" placeholder="Type">
+		<input type="file" name="image">
+        <button type="submit">Submit</button>
+    </form>
+    <h1>DELETE</h1>
+    <form action="/material/delete" method="POST">
+        <input type="text" name="name">
+        <button type="submit">Submit</button>
+		
+    </form>
+	<form action="/~matkirjasto/api/all" method="GET">
+		<button type="submit">TEST</button>
+	</form>
+    </br>
+    <a href="/all">Kaikki</a>
+	
+	<script>
+	$(function() {	
+		var url = './all';
+		$.ajax({
+			url: url,
+			dataType: 'json',
+			type: 'GET',
+			crossDomain:true,
+			cache: false,
+			success: function(data) {
+				console.log(data);
+			}.bind(this),
+			error: function(xhr, status, err) {
+				console.error(url, status, err.toString());
+			}.bind(this)
+		});
+	});
+</script>
+</body>
+</html>
