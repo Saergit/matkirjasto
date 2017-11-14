@@ -1,0 +1,664 @@
+@charset "utf-8";
+
+/*ELEMENTS*/
+html, body {
+    height: 100%;
+	width: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	line-height: 1.3; 
+	min-height: 100%;
+	background-image: url("http://niisku.lamk.fi/~matkirjasto/mat/materiaalikirjasto/public/assets/images/temp/vertical_background.jpg");
+	background-size: 100% 100%;
+}
+
+h1 {
+	font-size: 50px;
+	float: right;
+	padding: 20px 80px 5px 0;
+}
+
+h2 {
+	font-size: 25px;
+	padding: 0 0 0 0;
+	text-transform: capitalize;
+}
+
+h3 {
+	font-size: 20px;
+	padding: 0 0 2px 0;
+	text-transform: capitalize;
+}
+
+h4 {
+	font-size: 40px;
+	float: right;
+	margin: 110px -95px 0 0;
+}
+
+a {
+    text-decoration: none;
+	color: #000;
+}
+/*HEADER*/
+header {
+	width: 98.5%;
+	border-radius: 6px;
+	max-height: 40%;
+	margin: 0 auto;
+	margin-top: 5px;
+	box-shadow: 0 0 10px 10px rgba(0,0,0,0.2);
+}
+
+header img{
+	display: inline;
+	width: 100%;
+	max-height: 100%;
+}
+
+button:focus{
+	outline: none;
+}
+
+/*NAVBAR*/
+nav {
+	text-align: center;
+	padding: 20px;
+	background-color: lightgray;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 7px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+nav span {
+	text-transform: uppercase;
+	font-size: 0.9vmax;
+	max-width: 80%;
+	font-weight: 600;
+	color: dimgray;
+	margin: 0 auto;
+}
+
+nav a {
+	width: 7vmax;
+	margin: 0 auto;
+	display: inline-block;
+	color: #000;
+	background-color: #FDFCFC;
+	text-decoration:none;
+	padding: 1vh 0 1vh 0;
+	border-radius: 2px;
+}
+
+nav a:link, nav a:visited {
+	text-decoration:none;
+}
+
+nav a:hover {
+	box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
+	width: 8vmax;
+	background-color: #e5e5e5;
+	color: black;
+}
+
+/*CONTENT*/
+#crapper {
+	box-shadow: 0 0 10px 10px rgba(0,0,0,0.2);
+	flex: 1;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#content {
+	background-color: lightgray;
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 7px;
+	border-bottom-right-radius:6px;
+	border-bottom-left-radius:6px;
+	padding-bottom: 20px;
+}
+
+/*FOOTER*/
+footer {
+	/*padding-top: 0.5em;
+	padding-bottom: 1em;*/
+	width: 98.5%;
+	margin: 0 auto;
+	margin-bottom: 5px;
+	text-align: center;
+	clear: both;
+	background-color: dimgrey;
+	border-radius: 6px;
+	box-shadow: 0 0 10px 10px rgba(0,0,0,0.2);
+}
+
+footer img{
+	width: 20%;
+	height: 10%;
+	min-width: 240px;	
+}
+
+#muoviImg {
+	margin-bottom: 6px;
+}
+
+#RematerialP {
+	font-size: 1.7vmax;
+	padding-bottom: 0.4vh;
+}
+
+/* --------------------------------
+TÄSTÄ ALKAA MATERIAALINÄKYMÄN OSUUS
+---------------------------------*/
+table, td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+	border: 0;
+    width: 60%;
+	float: none;
+	margin: auto;
+}
+
+th, td {
+    padding: 10px;
+	background-color: #FDFCFC;
+	border: 0;
+}
+
+th{
+	text-transform: capitalize;
+	width: 50%;
+	border-color: lightslategray;
+	color: lightslategray;
+}
+
+tr{
+	width: 60%
+	
+}
+td{
+	width: 50%;
+	text-align: right;
+	color: lightslategray;
+	font-weight: bold; 
+}
+		
+
+td:nth-child(even) {
+	background-color: #FDFCFC;
+}
+
+input[type="text"] {
+	border: 2px solid #FDFCFC;
+	color: #68625B;
+	padding: 0.5em;
+	background-color: #fff;
+}
+
+/*input[type="text"]:focus {
+	border: 2px solid #d0c4b6;
+}*/
+
+textarea {
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+.tallenna {
+  	background: linear-gradient(#B4B4B4, #333333);
+  	border: 0;
+  	color: #fff;
+  	cursor: pointer;
+  	font-weight: bold;
+  	float: left;
+  	padding: 8px 16px;
+	margin-top: 3em;
+}
+
+.uusi {
+	background: linear-gradient(#b4b4b4, #333);
+  	border: 0;
+  	color: #fff;
+  	cursor: pointer;
+  	font-weight: bold;
+  	float: right;
+  	padding: 8px 16px;
+}
+
+.back-button {
+	font-size:36px; 
+	color: #000;
+}
+
+#perustiedot h2{
+	text-align: center;
+}
+
+#titleDiv{
+	max-width: 70%;
+	margin: 0 auto;
+	border-bottom: 3px solid;
+	border-color: darkslategray;
+	overflow: visible;
+}
+
+#titleDiv p h2 h3{
+	display: inline;
+}
+
+
+#titleDiv h2{
+	text-align: left;
+}
+
+
+#testDiv{
+	width: 70%;
+	margin: 0 auto;
+}
+
+#matTable{
+	border: 2px solid;
+	border-color: darkslategray;
+	border-radius: 5px;
+}
+
+#titleDiv img {
+	position: relative;
+	width: 8vmax;
+	height: 8vmax;
+	text-align: center;	
+	border: 3px solid;
+	border-color: #404040;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+	border-radius: 15px;
+	display: inline;
+}
+
+
+
+
+.mainTitle{
+	padding: auto;
+}
+
+#matNav{
+	margin-top: 0;
+	padding-top: 0;
+}
+
+#catButton{
+	margin-top: 5px;
+	margin-bottom: 4px;
+	width: 12vmax;
+	background-color: ghostwhite;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+	border: none;
+	border-radius: 2px;
+	padding: 0.8vh 0 0.8vh 0;
+	text-transform: uppercase;
+	font-size: 1.1vmax;
+	font-weight: 600;
+	color: dimgray;
+}
+
+#catButton:hover{
+	width: 13vmax;
+	background-color: #e5e5e5;
+}
+
+.collapseCategories{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 4px;
+	width: 20vmax;
+	height: 5vmax;
+	padding: 0;
+	overflow: hidden;
+	border-radius: 7px;
+}
+
+.collapseCategories a{
+	padding: 0;
+}
+
+.collapseCategories:hover{
+	width: 22vmax;
+}
+
+/*KATEGORIOIDEN KUVAT*/
+
+.collapseCategories span{
+	display: inline-block;
+	margin: 0 auto;
+	font-size: 1.5vmax;
+	margin-top: 8%;
+}
+
+#categoryWrapper{
+	width: 100%;
+	height: 100%;
+}
+
+#imgComposite{
+	width: 25%;
+	height: 100%;
+	background-color: #404040;
+	display: inline-block;
+	float: left;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#imgComposite img,
+#imgFiber img,
+#imgPlastic img,
+#imgWood img,
+#imgTextile img
+{
+	margin: 0 auto;
+	max-width: 70%;
+	max-height: 70%;
+	margin-top: 12%;
+}
+
+
+#imgFiber{
+	width: 25%;
+	height: 100%;
+	background-color: darkgray;
+	display: inline-block;
+	float: left;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#imgPlastic{
+	width: 25%;
+	height: 100%;
+	background-color: forestgreen;
+	display: inline-block;
+	float: left;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+
+#imgWood{
+	width: 25%;
+	height: 100%;
+	background-color: saddlebrown;
+	display: inline-block;
+	float: left;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#imgTextile{
+	width: 25%;
+	height: 100%;
+	background-color: darkorange;
+	display: inline-block;
+	float: left;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+
+
+button img{
+	max-width: 15%;
+	margin-top: -3px;
+	margin-right: -2px;
+}
+
+nav {
+	text-align: center;
+	padding: 20px;
+	background-color: lightgray;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 7px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+nav span {
+	text-transform: uppercase;
+	font-size: 0.9vmax;
+	max-width: 80%;
+	font-weight: 600;
+	color: dimgray;
+	margin: 0 auto;
+}
+
+nav a {
+	width: 7vmax;
+	margin: 0 auto;
+	display: inline-block;
+	color: #000;
+	background-color: #FDFCFC;
+	text-decoration:none;
+	padding: 0.6vh 0 0.6vh 0;
+	border-radius: 2px;
+}
+
+
+
+/*SECTION*/
+
+#sectionWrapper {
+	width: 100%;
+	height: 100%;
+}
+
+#sectionImg {
+	display: inline;
+	width: 30%;
+	min-height: 100% !important;
+}
+
+#sectionCont {
+	display: inline;
+	width: 70%;
+	overflow: hidden;
+}
+
+#textPara{
+	width: 95%;
+	text-align: left;
+	text-decoration: none;
+	display: inline;
+}
+
+section {
+	margin: 0 auto;
+	margin-bottom: 4px;
+	width: 70%;
+	overflow: auto;
+	background-color: ghostwhite;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+	border-radius: 5px;
+	
+}
+
+section:hover {
+	background-color: #e5e5e5;
+	width: 72%;
+	color: black;
+	text-decoration: none;
+}
+
+section h2 {
+	font-size: 1.3em;
+}
+
+section img {
+	width: 11vmin;
+	height: 11vmin;
+	float:left;
+	margin: 2em;
+	margin-top: 2%;
+	border: 4px solid;
+	border-radius: 7px;
+	border-color: #404040;
+}
+
+
+.center {
+    margin: auto;
+    padding: 10px;
+    overflow: auto;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+/* ---------------------------------
+TÄHÄN LOPPUU MATERIAALINÄKYMÄN OSUUS
+----------------------------------*/
+
+/* ------------------------------- 
+TÄSTÄ ALKAA MATERIALSEARCHIN OSUUS
+--------------------------------*/
+#searchDiv{
+	overflow: hidden;
+	max-width: 60%;
+	margin: 0 auto;
+	font-size: 120%;
+}
+
+#matSearch{
+	width: 100%;
+	margin: 0 auto;
+	float: left;
+}
+
+
+.attribute{
+	width: 40%;
+	display: inline-block;
+}
+
+input [type="number"]{
+	display: inline;
+}
+
+
+.catParameters{
+	margin-bottom: 10px;
+}
+
+.searchButtons{
+	margin-top: 5px;
+	margin-bottom: 4px;
+	width: 12vmax;
+	background-color: ghostwhite;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+	border: none;
+	border-radius: 2px;
+	padding: 0.8vh 0 0.8vh 0;
+	text-transform: uppercase;
+	font-size: 1.1vmax;
+	color: dimgray;
+}
+
+.searchButtons:hover{
+	width: 13vmax;
+	background-color: #e5e5e5;
+}
+
+.searchInputs{
+	padding: 3px;
+	height: 25px;
+	max-width: 12vmax;
+	margin-right: 3px;
+}
+
+.searchInputs:focus{
+	outline: none;
+}
+
+
+
+
+
+
+
+
+/* -------------------------------- 
+TÄHÄN LOPPUU MATERIALSEARCHIN OSUUS
+---------------------------------*/
+
+/* -------------------- 
+TÄSTÄ ALKAA MEDIA QUERY
+---------------------*/
+
+@media screen and (max-aspect-ratio: 1/1){
+	#crapper {
+		width: 90%;
+	}
+
+	nav {
+		width: 100%;
+		padding: 10px;
+	}
+
+	.content {
+		width: 100%;
+	}
+	
+	#content{
+		width: 100%;
+		padding: 0 0 0 0;
+	}
+	
+	#sections{
+		width: 100%;
+	}
+	
+	section {
+		width: 97%;
+	}
+	
+	section:hover {
+		width: 85%;
+	}
+
+	section img {
+		width: 20vmin;
+		height: 20vmin;
+	}	
+	
+	#searchDiv{
+		max-width: 90%;
+	}
+	
+	nav a {
+		width: 10vmax;
+	}
+	
+	.attribute{
+		display: block;
+	}
+	
+}
+
+/* --------------------- 
+TÄHÄN LOPPUU MEDIA QUERY
+----------------------*/
